@@ -21,6 +21,6 @@
     <% end %>
 
     <%= gravatar_for @user %>
-    <a href="http://gravatar.com/emails">change</a>
+    <%= link_to 'change', "http://gravatar.com/emails", :onclick=>"window.open(this.href,'hoge', 'height=400, width=800');return false;" %>
   </div>
 </div>
